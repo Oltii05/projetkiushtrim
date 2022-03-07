@@ -1,0 +1,83 @@
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+	height: 70px;
+
+	// Left navigation bar item
+	.left {
+		display: flex;
+		gap: 30px;
+
+		.gender {
+			background-color: #f9f9f9;
+			border-radius: 0.8rem;
+			padding: 5px;
+			gap: 10px;
+			display: flex;
+	
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0px 1.5rem;
+				border-radius: 0.8rem;
+				gap: 5px;
+				cursor: pointer;
+	
+				&.active {
+					background-color: pink;
+					color: #fff;
+				}
+			}
+	
+			h2 {
+				font-size: 1rem;
+			}
+		}
+	
+		.search-bar {
+			padding: 5px 15px;
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			background-color: #f9f9f9;
+			border-radius: 0.8rem;
+			
+			input {
+				border: none;
+				background-color: transparent;
+				min-width: 350px;
+				font-size: 15px;
+
+				&::placeholder {
+					color: #c2c2c2;
+				}
+
+				&:focus {
+					outline: none;
+
+				}
+			}
+		}
+	}
+
+	// Right navigation bar item
+	.right {
+		padding: 0 2rem;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		img {
+			width: 30px;
+			cursor: pointer;
+
+			&#profile {
+				width: 40px;
+				border-radius: 50%;
+			}
+		}
+	}
+}

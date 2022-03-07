@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&display=swap");
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+  height: 70px;
+}
+
+.navbar .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .left .gender {
+  background-color: #f9f9f9;
+  border-radius: 0.8rem;
+  padding: 5px;
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .left .gender div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 1.5rem;
+  border-radius: 0.8rem;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.navbar .left .gender div.active {
+  background-color: pink;
+  color: #fff;
+}
+
+.navbar .left .gender h2 {
+  font-size: 1rem;
+}
+
+.navbar .left .search-bar {
+  padding: 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  background-color: #f9f9f9;
+  border-radius: 0.8rem;
+}
+
+.navbar .left .search-bar input {
+  border: none;
+  background-color: transparent;
+  min-width: 350px;
+  font-size: 15px;
+}
+
+.navbar .left .search-bar input::-webkit-input-placeholder {
+  color: #c2c2c2;
+}
+
+.navbar .left .search-bar input:-ms-input-placeholder {
+  color: #c2c2c2;
+}
+
+.navbar .left .search-bar input::-ms-input-placeholder {
+  color: #c2c2c2;
+}
+
+.navbar .left .search-bar input::placeholder {
+  color: #c2c2c2;
+}
+
+.navbar .left .search-bar input:focus {
+  outline: none;
+}
+
+.navbar .right {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.navbar .right img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.navbar .right img#profile {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.sidebar {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  min-width: 250px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 1rem 2rem;
+  border-right: 2px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.sidebar .logo {
+  margin-bottom: 3rem;
+}
+
+.sidebar h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #adadad;
+}
+
+.sidebar .title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar .links {
+  list-style-type: none;
+  margin-bottom: 3rem;
+}
+
+.sidebar .links .link-item {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px 15px 10px 10px;
+  border-radius: 0.8rem;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+  cursor: pointer;
+}
+
+.sidebar .links .link-item.active h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+.sidebar .links .link-item.active h2::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #ffae00;
+}
+
+.sidebar .links .link-item:hover {
+  background-color: #fdcbd3;
+}
+
+.sidebar .help {
+  padding: 10px 15px 10px 10px;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+  cursor: pointer;
+}
+
+.sidebar .help h2 {
+  color: #333;
+}
+
+.sidebar .help:hover {
+  background-color: #fdcbd3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Red Hat Display';
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon {
+  width: 25px;
+}
+
+.main {
+  padding-top: 10px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .content {
+  padding: 10px 15px;
+}
+
+.main .content #offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.main .content #offers .sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.main .content #offers .sale #div-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.8rem;
+  background-color: #c0e4c0;
+  padding: 10px 20px;
+}
+
+.main .content #offers .sale #div-1 img {
+  width: 150px;
+  height: 150px;
+}
+
+.main .content #offers .sale #div-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.8rem;
+  gap: 20px;
+  padding: 20px;
+  background-color: #aed6f0;
+}
+
+.main .content #offers .sale #div-2 img {
+  width: 80px;
+}
+
+.main .content #offers .sale #div-2 h2 {
+  text-align: center;
+}
+
+.main .content #offers .ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: auto;
+  padding: 5px 20px;
+  border-radius: 0.8rem;
+  background-color: #f4f4f4;
+}
+
+.main .content #offers .ad h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main .content #offers .ad .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.main .content #offers .ad .price .old {
+  text-decoration: line-through;
+  color: #343434;
+}
+
+.main .content #offers .ad .price .sale {
+  color: #000;
+  font-weight: 800;
+}
+
+.main .content #offers .ad img {
+  width: 200px;
+}
+
+.main .content section#new {
+  margin-top: 30px;
+}
+
+.main .content section#new .products {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.main .content section#new .products .card .card-image {
+  border-radius: 0.8rem;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 275px;
+  max-height: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .content section#new .products .card .card-image img {
+  width: 200px;
+}
+
+.main .content section#new .products .card .card-body {
+  padding: 10px;
+}
+
+.main .content section#new .products .card .card-body .name {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main .content section#new .products .card .card-body .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.main .content section#new .products .card .card-body .bottom button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main .content section#new .products .card .card-body .bottom button img {
+  width: 25px;
+}
+/*# sourceMappingURL=style.css.map */
